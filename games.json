@@ -1,0 +1,32 @@
+[
+    {
+        "id": "/start-game",
+        "usedCardIds": [],
+        "teamAScore": 0,
+        "teamBScore": 0,
+        "gameStarted": false,
+        "roundStarted": false,
+        "activePlayerId": 0,
+        "watchingPlayerId": 0,
+        "gameOver": false,
+        "roundsCompleted": 0,
+        "forceQuit": false,
+        "teamAPlayerIds": [],
+        "teamBPlayerIds": []
+    },
+    {
+        "id": "/start-game1",
+        "usedCardIds": [],
+        "teamAScore": 0,
+        "teamBScore": 0,
+        "gameStarted": false,
+        "roundStarted": false,
+        "activePlayerId": 0,
+        "watchingPlayerId": 0,
+        "gameOver": false,
+        "roundsCompleted": 0,
+        "forceQuit": false,
+        "teamAPlayerIds": [],
+        "teamBPlayerIds": []
+    }
+]
