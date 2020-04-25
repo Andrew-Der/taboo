@@ -10,6 +10,8 @@ from http_response.no_action_handler import NoActionHandler
 from game_logic import start_game
 from game_logic import init_game
 
+from game_logic import GAME_DB
+
 routes = {
     "/" : {
         "template" : "index.html" 
@@ -40,9 +42,14 @@ class Server(BaseHTTPRequestHandler):
                     handler = NoActionHandler()
                 else:
                     handler = BadRequestHandler()
+            if self.path == "/start-game":
+                if start_game(self):
+                    handler = NoActionHandler()
+                else:
+                    handler = BadRequestHandler()
         else:
             handler = BadRequestHandler()
-    
+
         self.respond({
             'handler': handler 
         })
